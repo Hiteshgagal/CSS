@@ -1,0 +1,59 @@
+/* box model : height width border padding margin */
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    /* border-width: 2px;
+    border-style: dotted;
+    border-color: rebeccapurple; */
+    /* border: 2px dotted gray; */
+    /* text-align: end; */
+    /* border-radius: 10px; */
+    /* border-radius: 50%; */
+    /* padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px; */
+    /* padding: 20px 20px 20px 20px; */
+    /* padding: 25px;
+    margin: 25px; */
+    /* margin: 10px 20px 20px 10px; }*/
+
+/* h1{
+    width: 200px;
+    height: 50px;
+    background-color: palegoldenrod;
+    /* short hand */
+    /* border: 3px solid rgb(109, 86, 86);
+    text-align: center;
+} */
+ /* display proparty: inline block inlin-block and none */
+ /* .id{
+    background-color: aqua;
+    display: inline;
+ }
+ button{
+    background-color: red;
+    display: block;
+ } */
+   div{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 1);
+  }
+ /* #hi{
+     display: none; */
+    /* visibility: hidden; } */
+
+    #box1{
+        background-color: rgba(0, 0, 255, 0.3);
+    }
+    #box2{
+        background-color: rgba(0, 0, 255, 0.6);
+    }
+    #box3{
+        background-color: rgba(0, 0, 255, 0.9);
+    }

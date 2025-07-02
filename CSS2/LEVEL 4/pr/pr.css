@@ -1,0 +1,33 @@
+/* Q-1 */
+.navbar{
+    display: flex;
+    background-color: pink;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: rgb(245, 10, 10);
+}
+li{
+    list-style-type: none;
+    /* background-color: aqua; */
+}   
+
+
+/* q-2 */
+.outer{
+height: 400px;
+width: 400px;
+background-color: aqua;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    align-self: flex-end;
+    background-color: rgb(179, 104, 104);
+}
+/* aling iterm and aling-self which priority higher uper jovo */
+/* aling-self priority higher */

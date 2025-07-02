@@ -1,0 +1,57 @@
+/* CSS UNITS : % */
+/* 2. em */
+/* 3. rem */
+/* 4. vh and vw */
+/* #box-1{
+height: 100px;
+width: 100vh;
+font-size: 10px;
+background-color: green;
+}
+#box-2{
+  height: 50vh;
+  font-size: 2em;
+  width: 30%;
+  width: 5rem;
+  background-color: yellow;
+  margin-left: 10%;
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+/* position propertyes */
+/* static absolute relative fixed styky*/
+/* #box1{
+    position: static;
+}
+#box2{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    z-index: 1;
+}
+#box3{
+    position: absolute;
+    /* position: sticky; */
+    /* top: 500px;
+    left: 20px; }*/
+/* 
+#box4{
+    position: fixed;
+    top: 50px;
+    z-index: 4;
+} */ 
+
+/* background-img */
+#box1{
+    background-image: url(nature.jpg);
+     background-repeat: no-repeat;
+    /* background-position: center;
+    background-attachment: fixed;  */
+    background-size: cover;
+}
