@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+</head>
+<style>
+    body{
+        background-image: url(img/don.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+
+    }
+    .container{
+        padding-top: 80px;
+        text-align: center;
+    }
+    .box{
+        margin: auto;
+        width: 30%;
+        margin: 15px;
+        padding-top: 39px;
+        height: 250px;
+        border: 4px solid rgb(180, 62, 78);
+        display: inline-block;
+        text-align: center;
+        border-radius: 15px;
+        background-color: aquamarine;
+    }
+    .flexbox{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        /* flex-direction: column; */
+        
+    }
+    .flex{
+        border: 4px solid red;
+        height: 280px;
+        width: 30%;
+        background-color: rgb(18, 125, 224);
+        margin: 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    h1{
+       text-align: center; 
+       padding-top: 4px;    
+    }
+    .gridbox{
+        display: grid;
+        /* grid-template-columns: repeat(3, auto); */
+        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+         grid-column-gap: 2rem;
+        }
+        .grid{
+        justify-content: center;
+       border: 4px solid red;
+        height: 250px;
+       width: 96%; 
+       border-radius: 20px;
+       padding-bottom: 50px;
+       /* padding: 23px 24px; */
+       background-color: rgb(143, 80, 202);
+       text-align: center;
+    }
+   
+</style>
+<body>
+    <div class="container">
+        <h1>Noramal Method</h1>
+        <div class="box" id="box-1">Box1</div>
+        <div class="box" id="box-2">Box2</div>
+        <div class="box" id="box-3">Box3</div>
+       
+        
+    </div>
+     <h1>FlexBox Method</h1>
+    <div class="flexbox">
+        <div class="flex" id="flex-1">Box1</div>
+        <div class="flex" id="flex-2">Box2</div>
+        <div class="flex" id="flex-3">Box3</div>
+    </div>
+    <h1>Grid Method</h1>
+    <div class="gridbox">
+        <div class="grid" id="grid-1">Box1</div>
+        <div class="grid" id="grid-2">Box2</div>
+        <div class="grid" id="grid-3">Box3</div> 
+        <!-- <div class="grid" id="grid-3">Box3</div>
+        <div class="grid" id="grid-3">Box3</div>
+        <div class="grid" id="grid-3">Box3</div>
+        <div class="grid" id="grid-3">Box3</div>
+        <div class="grid" id="grid-3">Box3</div>
+        <div class="grid" id="grid-3">Box3</div> -->
+    </div>
+</body>
+</html>

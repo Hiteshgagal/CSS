@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body{
+            background-image: url(img/hitesh2.jpg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .navbar{
+            border-radius: 25px;
+            background-color: rgb(37, 46, 46);
+            padding: 10px;
+        }
+        .navbar ul{
+            overflow: auto;
+            padding-top: 4px;
+        
+        }
+        .navbar li{
+            list-style: none;
+            float: left;
+            font-size: 20px;
+            padding: 12px;
+            margin: 10px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 5px;
+        }
+        .navbar li a:hover{
+            color: rgb(131, 134, 133);
+            border: 2px solid rebeccapurple;
+            border-radius: 20px;
+        }
+        .flex{
+            display: flex;
+            border: 2px solid red;
+            margin: 20px;
+            padding: 30px;
+            background-color: rgb(43, 31, 56);
+            border-radius: 30px;
+        }
+        .flex li{
+            list-style: none;
+            /* padding: 8px; */
+        }
+        .flex li a{
+            text-decoration: none;
+            margin: 7px;
+            font-size: 20px;
+            color: aliceblue;
+            padding: 21px;
+        }
+        .flex li a:hover{
+            color: rgb(131, 134, 133);
+            border: 2px solid rebeccapurple;
+            border-radius: 20px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4, 6px);
+            grid-area: 'grid grid grid grid';
+            background-color: rgb(68, 58, 58);
+            padding: 21px;
+            border-radius: 20px;
+        }
+        #grid{
+            grid-area: grid;
+            padding: 5px;
+            margin: 5px;
+            font-size: 20px;
+
+        }
+        #grid a{
+            padding: 10px;
+            margin: 10px;
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+     <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header> 
+     <header>
+        <nav class="flexbox">
+            <ul class="flex">
+        
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="gridbox">
+            <ul class="grid">
+                <div id="grid" class="item">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Services</a>
+                
+                    
+                </div>  
+            </ul>
+        </nav>
+    </header> 
+</body>
+
+</html>

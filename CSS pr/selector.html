@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<style>
+    div{background-color: red;}
+    .class{background-color: aqua;}
+    #id{
+        background-color: brown;
+    }
+    div > p{
+        background: blue;
+    }
+    a:visited{
+        background-color: aqua;
+    }
+    a:link{
+        color: rgb(231, 15, 177);
+    }
+    a:active{
+        color: rgb(248, 232, 8);
+    }
+    a:first-child{
+        color: rgb(66, 13, 212);
+    }
+
+    .con p::first-letter{
+        font-size: 50px;
+    }
+    .con p::first-line{
+       color: aqua;
+    }
+    [data-color="primary"]{
+        color: #b47676;
+    }
+    body, p{
+        background-color: #412d2d;
+    }
+    /* .con2:nth-child(odd){
+       background-color: aqua;
+    }
+    .con2:nth-child(even){
+       background-color: rgb(41, 51, 51);
+    } */
+     .con2:nth-last-child(1){
+       background-color: aquamarine;
+     }
+     .con2:nth-last-child(4){
+       background-color: rgb(53, 94, 80);
+     }
+     .con::before{content: "Hello I am Hitesh";}
+     .con::after{content: " i am web";}
+     .con2::selection{background-color: rgb(167, 201,15); }
+     input::placeholder{
+        background-color: aquamarine;
+        font-size: 10px;
+        padding: 10px;
+     }
+</style>
+<body>
+    <!--1.element sel.  -->
+    <div>Element</div>
+    <!-- 2.class -->
+     <div class="class">Class</div>
+     <!-- 3.id -->
+      <div id="id">IDs</div>
+      <div class="univ">
+        <p>Lorem ipsum dolor, sit amet consectetur</p>
+      </div>
+      <a href="https://google.com">Go to Google</a>
+      <div class="con">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, nisi eum at ipsam debitis enim repudiandae nulla! Molestiae eligendi esse dolor, odio nesciunt, voluptatibus facilis suscipit veniam voluptas minima odit!</p>
+        <p data-color="primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt inventore aliquid eligendi, alias rerum hic esse saepe optio, deserunt maiores provident laudantium earum sunt suscipit labore exercitationem atque. Dolorem.</p>
+      </div>
+      <div class="con2">box1</div>
+      <div class="con2">box2</div>
+      <div class="con2">box3</div>
+      <div class="con2">box4</div>
+      <div class="con2">box5</div>
+      <input type="text" placeholder="Enter Your Name">
+</body>
+</html>

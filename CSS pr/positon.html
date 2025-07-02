@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    .con{
+        height: 1000px;
+        background-color: aqua;
+        width: 100vh;
+    }
+    .box{
+        background-color: rebeccapurple;
+        height: 100px;
+        margin: 20px;
+        padding: 10px;
+        /* position: relative; */
+        width: 80vh;
+        border: 2px solid gray;
+    }
+    .box1{
+        background-color: rgb(255, 123, 0);
+        position: sticky;
+        top: 0px;
+        /* position: relative;
+        top: 10px;
+        left: 20px; */
+    }
+    .box2{
+        /* position: fixed;
+        left: 100px; */
+        /* position: absolute;
+        top: 0px; */
+        background-color: rgb(157, 255, 0);
+    
+    }
+    .box3{
+     
+        background-color: rgb(26, 27, 23);
+    }
+    .box4{
+     
+        background-color: rgb(255, 0, 55);
+       
+    }
+    .box5{
+       
+        background-color: rgb(68, 0, 255);
+    }
+</style>
+<body>
+    <div class="con">
+        <div class=" box1 box"></div>
+        <div class=" box2 box"></div>
+        <div class=" box3 box"></div>
+        <div class=" box4 box"></div>
+        <div class=" box5 box"></div>
+    </div>
+</body>
+</html>
