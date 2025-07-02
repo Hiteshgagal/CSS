@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+</head>
+<style>
+    .container{
+       height: 544px;
+       width: 100%;
+       border: 2px solid black;
+       display: flex; /*Initialize the container as a flex-box*/
+
+       /* flex properties for flex container */
+       
+       /* 1. Flex-direction  */
+       /* flex-direction: row;  row is default value */
+       /* flex-direction: column; */
+       /* flex-direction: row-reverse; */
+       /* flex-direction: column-reverse; */
+        
+       /* 2. flex-wrap */
+       /* flex-wrap: nowrap; nowrap is default value */
+       /* flex-wrap: wrap; */
+       /* flex-wrap: wrap-reverse; */
+
+       /* 3. flex-direction and flex-wrap shorthand  */
+       /* flex-flow: row wrap-reverse; */
+
+       /* justify-content will justify the content in horizintal direction */
+       /* 4. justyfy content */ 
+       /* justify-content: center;  */
+       /* justify-content: space-between; */
+       /* justify-content: space-evenly;  */
+       /* justify-content: space-around; */
+       
+       /* justify-content aling item will justify the content in vertical direction */
+       /* 5. aling-item */
+       /* align-items: center; */
+       /* align-items: flex-end; */
+       /* align-items: flex-start;  flex-start is default value */
+       /* align-items: stretch; */
+       
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        border: 2px solid rgb(41, 209, 49);
+        margin: 10px;
+        padding: 3px;
+    }
+    /* flex properties for flex items */
+    /* 6. order */
+    /* Higher the order, later it shows up in the container */
+
+    /* 7.flex-grow */
+    /* glex-grow vadhu te page ma moto dekhase */
+
+    /* 8.flex-shrink */
+    /* shrink vadhu hase te page ne nano karsu to te gadap thi nano  thase */
+
+    /* 9.flex basis */
+    /* control height width */
+    /* when flex-direction is set to row flex-basis: will control width */
+    /* when flex-direction is set to column flex-basis: will controol height */
+
+    /* 10.short hand */
+      /* flex; grow shrink basis */
+
+      /* 11. aling-self */
+      /* box ne teni je jagya chhe tenathi barbar niche ke uper ke center rakhi sakay */
+    
+    #item-1{
+       /* order: 2; */
+       /* flex-grow: 2;
+       flex-shrink: 4; */
+    }
+    #item-2{
+       /* flex-grow: 3;
+       flex-shrink: 3; */
+       /* flex-basis: 160px; */
+    }
+    #item-3{
+       /* order: 50; */
+       /* flex-grow: 5;
+       flex-shrink: 5; */
+       /* shorthand= flex:grow shrink basis */
+       /* flex: 3 3 200px; */
+       align-self: flex-end;
+       align-self: flex-start;
+       align-self: center;
+    }
+</style>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+         <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+         <!-- <div class="item" id="item-4">Fourth Box</div> 
+        <div class="item" id="item-5">Fifth Box</div> 
+        <div class="item" id="item-6">Sixth Box</div>  -->
+    </div>
+</body>
+</html>

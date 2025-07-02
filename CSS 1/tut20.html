@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And Text Shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: aqua;
+        /*1. BOX SHADOW */
+        /* box shadow: offset_x Offset-y color */
+        /* box-shadow: 3px 2px red; */
+
+        /* box shadow:  nagative value -x -y color */
+        /* box-shadow: -3px -2px red; */
+
+        /* box shadow: offset_x Offset-y blar-radious color */
+        /* box-shadow: 3px 2px 10px red; */
+
+        /* box shadow: offset_x Offset-y blar-radious spret-radious color */
+        /* box-shadow: -2px 12px 10px 34px red; */
+
+        /* rgb(red, blue, green, Apha(giving darkness)) */
+        /* box-shadow: -2px 12px 10px 34px rgb(224, 111, 111, 0.4) */
+
+        /* box-shadow ne andar ni taraf aapvi hoy to "inset no upyog thay chhe" */
+        /* box-shadow: inset -2px 12px 10px 13px rgb(224, 111, 111, 0.4) */
+        
+        /* giving 2 box-shadow in one box */
+        box-shadow: 13px 3px red, 4px 14px green;
+        /* box-shadow giving positive and nagative value and nagative value giving in up elements  */
+
+        /*2. TEXT SHADOW */
+        /* text-shadow: 3px 2px red; */
+    }
+    .card h2{
+        /* text shadow: x y color */
+        /* text-shadow: 3px 4px white; */
+
+        /* text-shadow; -x -y color */
+        text-shadow: -3px -4px white;
+        
+         /* text shadow; x y blar radiuas clor */
+        /* text-shadow: 3px 5px 9px rgb(230, 48, 48); */
+
+        
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Cours</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores enim odio, ipsa laudantium quos, architecto porro, sit adipisci dolorem beatae aliquid earum quam exercitationem animi! Reprehenderit porro itaque dolorum ipsam voluptas rem amet asperiores.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores enim odio, ipsa laudantium quos, architecto porro, sit adipisci dolorem beatae aliquid earum quam exercitationem animi! Reprehenderit porro itaque dolorum ipsam voluptas rem amet asperiores.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>JavaScript Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores enim odio, ipsa laudantium quos, architecto porro, sit adipisci dolorem beatae aliquid earum quam exercitationem animi! Reprehenderit porro itaque dolorum ipsam voluptas rem amet asperiores.</p>
+        </div>
+    </div>
+</body>
+
+</html>

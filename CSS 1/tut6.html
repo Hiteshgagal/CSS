@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders And Background</title>
+</head>
+<style>
+    #id1{
+      background-color: aqua;
+      height: 100px;
+      width: 400px;
+      /* border: width style color */
+      border: 4px solid rgb(55, 0, 128);
+      border-radius: 10px;
+    }
+    #id2{
+        height: 100px;
+        width: 400px;
+        background-color: red;
+        color: blue;
+        border-right: 4px solid black;
+        border-bottom: 4px solid aqua;
+        border-left: 4px solid yellow;
+        border-top: 4px solid green;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #id3{
+        height: 800px;
+        width: 1400px;
+        background: url(https://media.istockphoto.com/id/1461225200/photo/transaction-completed-notification-in-a-mobile-phone-screen-phone-alongside-with-potted-plant.webp?a=1&b=1&s=612x612&w=0&k=20&c=QM6pC0ZtdRzGtahXjxqB6Ibyn218DLBYtvppQijKVRM=) ;
+        background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeayt on x and y axis*/
+        border: 4px solid yellow ;
+        /* background-position: center right;
+        background-position: top left;
+        background-position: bottom right; */
+        background-position: center center; /*center, top, bottom, right, and lrft use and make combo */
+    }
+</style>
+<body>
+    <h3>This is Headind</h3>
+    <p id="id1"> This is Paragraph</p>
+
+    <h3>This is second Headind</h3>
+    <p id="id2"> This is Second Paragraph</p>
+
+    <h3>This is third Headind</h3>
+    <p id="id3"> This is third Paragraph</p>
+</body>
+</html>
