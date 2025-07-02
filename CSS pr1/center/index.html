@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        background-color: red;
+
+        /* 1. horijontally center */
+         /* height: 300px;
+        width: 300px; 
+        margin: 0 auto;  */
+
+        /* 2. display:flex method */
+        /* height: 100vh;
+        width: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        /* 3. display:grid method*/
+        /* display: grid;
+        height: 100vh;
+        width: 100vh;
+        place-items: center; */
+
+        /* 4. athor method */
+        height: 100vh;
+        width: 100vh;
+
+    }
+    .child{
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,50%);
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
